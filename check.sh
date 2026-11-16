@@ -33,6 +33,9 @@ cd "$(new_project mathlib)"
 nix build --no-link .#default
 nix develop -c lake build
 nix develop -c lean Example/Mathlib.lean
+# `lake env lean` uses the search path lake computes itself, i.e. what
+# `lake serve` (the LSP) hands to lean.
+nix develop -c lake env lean Example/Mathlib.lean
 
 echo "== core-only project (mathlib = false, no manifest, no require) =="
 cd "$(new_project core)"

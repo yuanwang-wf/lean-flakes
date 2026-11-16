@@ -1,3 +1,7 @@
 .direnv/
 .lake/
 result
+
+# A global core.excludesFile often ignores .envrc, but the template has to
+# ship it or `nix flake init` (which copies tracked files) drops it.
+!.envrc
