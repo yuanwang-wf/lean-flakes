@@ -7,7 +7,7 @@
     # `nix flake update nixpkgs`, check that `nix build` still substitutes.
     nixpkgs.url = "github:NixOS/nixpkgs/0bb2eedc20e4739f29e8045034f2828ad7054f8f";
     flake-parts.url = "github:hercules-ci/flake-parts";
-    lean-flakes.url = "github:yuanw/lean-flakes";
+    lean-flakes.url = "github:yuanwang-wf/lean-flakes";
   };
 
   outputs = inputs @ { self, nixpkgs, flake-parts, ... }:

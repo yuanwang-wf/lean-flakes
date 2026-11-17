@@ -16,7 +16,7 @@ Lean flake can take them straight from the store.
 ## Start a project
 
 ```sh
-nix flake init -t github:yuanw/lean-flakes
+nix flake init -t github:yuanwang-wf/lean-flakes
 direnv allow          # or: nix develop
 lake build
 ```
@@ -35,7 +35,7 @@ extension needs `lean` and `LEAN_PATH` from that shell.
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
-    lean-flakes.url = "github:yuanw/lean-flakes";
+    lean-flakes.url = "github:yuanwang-wf/lean-flakes";
   };
 
   outputs = inputs @ { self, nixpkgs, flake-parts, ... }:

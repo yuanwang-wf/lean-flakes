@@ -13,7 +13,7 @@ new_project() {
     local dir=$tmp/$1
     mkdir -p "$dir"
     cp -R "$repo"/example/. "$dir/"
-    perl -pi -e "s|lean-flakes\\.url = \"github:yuanw/lean-flakes\"|lean-flakes.url = \"path:$repo\"|" "$dir/flake.nix"
+    perl -pi -e "s|lean-flakes\\.url = \"github:yuanwang-wf/lean-flakes\"|lean-flakes.url = \"path:$repo\"|" "$dir/flake.nix"
     echo "$dir"
 }
 

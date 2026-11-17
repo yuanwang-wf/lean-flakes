@@ -1,7 +1,7 @@
 # Example
 
 Lean 4 + Mathlib, all from nixpkgs `leanPackages`, wired up with
-[lean-flakes](https://github.com/yuanw/lean-flakes). Mathlib is a prebuilt
+[lean-flakes](https://github.com/yuanwang-wf/lean-flakes). Mathlib is a prebuilt
 download and Lake never needs the network.
 
 ```sh
